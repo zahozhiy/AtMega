@@ -128,6 +128,7 @@
         <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
       </AvrGcc>
     </ToolchainSettings>
+    <PostBuildEvent>xcopy "$(TargetDir)GccApplication7.hex" "$(SolutionDir)\HEX\" /Y</PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="i2c.c">
