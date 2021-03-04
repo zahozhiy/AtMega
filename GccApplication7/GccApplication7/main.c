@@ -573,9 +573,9 @@ int main(void)
 	_delay_us(4);		//	resetb
 	PORTA |= (1<<PORTA3); //resetb
 	
-	mb6=0x0f;                           // all channels of i2c are on
-	twi_write_one_byte(0x70, p_mb6);    //
-	_delay_us(100);
+	//mb6=0x0f;                           // all channels of i2c are on
+	//twi_write_one_byte(0x70, p_mb6);    //
+	//_delay_us(100);
 	
 	InitCDI64500();
 	//----acquiring address-------
